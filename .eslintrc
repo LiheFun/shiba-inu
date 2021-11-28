@@ -1,0 +1,22 @@
+{
+  "extends": ["taro"],
+  "rules": {
+    /*
+    	禁止出现未使用过的变量。taro默认是error级别的，这里关闭掉
+    	原因是在ts下taro很多类型会报no-unused-vars，而且关闭并不影响ts的语法检查(xxx is declared but its value is never read.)
+    */
+    "no-unused-vars": ["off", { "varsIgnorePattern": "Taro|Config|Chain" }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "jsx-quotes": ["error", "prefer-double"],
+    "quotes": [2, "single", "avoid-escape"],
+    "semi": ["error", "never"]
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "useJSXTextNode": true,
+    "project": "./tsconfig.json"
+  }
+}

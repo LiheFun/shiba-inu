@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/contact/index",
+          "pathName": "pages/contact/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
